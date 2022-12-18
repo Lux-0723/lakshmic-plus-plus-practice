@@ -1,0 +1,22 @@
+Write a program to generate the following series – 2, 4, 7, 12, 21…..
+Sample Input:
+
+5
+
+Sample Output:
+
+2 4 7 12 21
+code:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,i,c=2,sum=2;
+    cin>>n;
+    cout<<c<<" ";
+    for(i=0;i<n;i++)
+    {
+        sum=(sum*c)-i;
+        cout<<sum<<" ";
+    }
+}
