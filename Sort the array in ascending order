@@ -1,0 +1,55 @@
+Write a C program to sort the given array in ascending order:
+
+Input & Output Format:
+
+Input consists of 1 integer and 1 array
+
+First input consists of size of an array.
+
+Second inputs consists of an elements depends upon their size.
+
+Output consists of an array in ascending order.
+Sample Input:
+
+5
+54
+68
+25
+14
+74
+Sample Output:
+
+14
+25
+54
+68
+74
+code:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,i,j,num,a[50];
+    cin>>n;
+    for(i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=i;j<n;j++)
+        {
+            if (a[i]>a[j+1])
+            {
+                num=a[i];
+                a[i]=a[j+1];
+                a[j+1]=num;
+            }
+        }
+    }
+    for(i=1;i<=n;i++)
+    {
+        cout<<a[i]<<endl;
+    }
+    
+}
