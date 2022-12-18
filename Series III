@@ -1,0 +1,26 @@
+Write a program to generate the following series – 6, 9, 14, 21, 30….
+Sample Input:
+
+5
+
+Sample Output:
+
+6 9 14 21 30 
+code:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i,n,sum=0,a=3,b=6;
+    cin>>n;
+    
+    for(i=1;i<=n;i++) //12345
+    {
+         
+        cout<<b<<" ";
+        b=b+a;
+        a=a+2;
+        
+        
+    }
+}
