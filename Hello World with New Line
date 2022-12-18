@@ -1,0 +1,14 @@
+Write a C program to print sample output.
+
+sample output:
+Hello World...!
+
+Hello World...!
+
+code:
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"Hello World...!"<<endl<<"Hello World...!";
+}
