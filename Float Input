@@ -1,0 +1,19 @@
+Write a program to get a float value from the user and display it.
+
+Sample Input:
+
+23.115
+
+Sample Output:
+
+23.115000
+code:
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float a;
+    cin>>a;
+    cout<<fixed<<setprecision(6)<<a;  
+}
