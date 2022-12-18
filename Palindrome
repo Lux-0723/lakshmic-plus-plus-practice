@@ -1,0 +1,30 @@
+Write a C program to find whether the given number is Palindrome or not.
+Sample Input:
+
+565
+
+Sample Output:
+
+Same 
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,rev=0,a;
+    cin>>n;
+    do
+    {
+      a=n%10;
+      rev=(rev*10)+a;
+      n=n/10;
+    }
+    while(n!=0);
+    if(n == rev)
+    {
+        cout<<"Same";
+    }
+    else
+    {
+        cout<<"Not Same";
+    }
+}
