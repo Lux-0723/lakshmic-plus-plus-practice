@@ -1,0 +1,32 @@
+Write a C program to find the addition of n numbers by recursion:
+
+INPUT & OUTPUT FORMAT: 
+
+The input corresponds to the value of n. 
+
+The output corresponds to the sum of the values up to n.
+
+Sample Input
+5
+
+Sample Output
+
+
+Sum of n numbers:
+15
+
+code:
+#include<iostream>
+using namespace std;
+int sum(int n)
+{
+    if(n!=0)
+    return n+ sum(n-1);
+    //return 0;
+}
+int main()
+{
+    int n;
+    cin>>n;
+    cout<<"Sum of n numbers:"<<endl<<sum(n);
+}
