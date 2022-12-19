@@ -51,3 +51,22 @@ int max(int n)
         cin>>a[i];
     }
     
+    
+    for(i=1;i<n;i++)
+    {
+        
+      if(a[0]<a[i]) 
+      {
+          a[0]=a[i];
+      }
+    }
+    cout<<"The maximum element in the array is "<<a[0];
+    return (1);
+}
+
+int main()
+{
+    int n;
+    cin>>n;
+    max(n);
+}
